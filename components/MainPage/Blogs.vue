@@ -27,16 +27,16 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from "vue"
+import Vue, { PropType } from "vue"
 import Blog from "~/types/blog";
 
 export default Vue.extend({
   name: "Blogs",
   props: {
     blogsList: {
-      type: Array,
+      type: Array as PropType<Blog[]>,
       required: true
-    } as PropOptions<Blog[]>
+    }
   },
 })
 </script>

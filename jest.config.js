@@ -4,6 +4,7 @@ module.exports = {
     '^~/(.*)$': '<rootDir>/$1',
     '^vue$': 'vue/dist/vue.common.js'
   },
+  setupFiles: ["<rootDir>/test/unit/index.ts"],
   moduleFileExtensions: [
     'ts',
     'js',

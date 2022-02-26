@@ -38,6 +38,13 @@ export default Vue.extend({
       this.blogList = (await this.$axios.$get("/api/v1/main/blog")).data
     },
     async loadCategories() {
+      // this.categoriesList = [{
+      //   "uuid": "05014f1e-eb83-3452-982b-00a2bd575226",
+      //   "title": "wet pet food",
+      //   "slug": "wet-pet-food",
+      //   "created_at": "2022-02-20T00:00:26.000000Z",
+      //   "updated_at": "2022-02-20T00:00:26.000000Z"
+      // }]
       this.categoriesList = (await this.$axios.$get("api/v1/categories", {
         params: {
           limit: 2

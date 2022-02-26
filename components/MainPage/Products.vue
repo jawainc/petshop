@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-  import Vue, { PropOptions } from "vue"
+  import Vue, { PropType } from "vue"
   import Category from "~/types/category";
   import Product from "~/types/product";
 
@@ -23,9 +23,9 @@
     name: "Products",
     props: {
       category: {
-        type: Object,
+        type: Object as PropType<Category>,
         required: true
-      } as PropOptions<Category>
+      }
     },
     data() {
       return {

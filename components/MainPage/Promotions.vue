@@ -29,16 +29,16 @@
 </template>
 
 <script lang="ts">
-  import Vue, { PropOptions } from "vue"
+  import Vue, { PropType } from "vue"
   import Promotion from "~/types/promotion";
 
   export default Vue.extend({
     name: "Promotions",
     props: {
       promotionsList: {
-        type: Array,
+        type: Array as PropType<Promotion[]>,
         required: true
-      } as PropOptions<Promotion[]>
+      }
     },
   })
 </script>

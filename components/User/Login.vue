@@ -34,6 +34,7 @@
             outlined
             dense
             v-model="form.email"
+            class="email-field"
           ></v-text-field>
           <v-text-field
             dense
@@ -41,6 +42,7 @@
             type="password"
             label="password"
             v-model="form.password"
+            class="password-field"
           ></v-text-field>
 
         <v-container
@@ -52,7 +54,7 @@
           ></v-checkbox>
         </v-container>
 
-        <v-btn @click="submit()" class="success mb-10 " block>Login</v-btn>
+        <v-btn @click="submit()" class="success mb-10 login-btn" block>Login</v-btn>
 
       </v-card>
     </v-dialog>

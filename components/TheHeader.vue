@@ -26,7 +26,7 @@
             <v-btn v-if="!userLoggedIn" @click="$store.commit('user/setLoginForm', true)" outlined color="white" class="ml-5">Login</v-btn>
             <template v-else>
               <v-btn  outlined color="white" class="ml-5">Logout</v-btn>
-              <img @click="$store.commit('user/setUserSettings', true)" class="ml-5" alt="" src="/avatar-small.png" />
+              <img @click="$store.commit('user/setUserSettings', true)" class="ml-5 user-settings" alt="" src="/avatar-small.png" />
             </template>
 
           </v-toolbar-items>

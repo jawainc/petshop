@@ -7,7 +7,7 @@
       </v-container>
     </v-main>
     <TheFooter />
-   <UserLogin v-if="!userLoggedIn" />
+    <UserLogin v-if="!userLoggedIn" />
     <UserSettings v-if="showUserSettings && userLoggedIn" />
   </v-app>
 </template>
